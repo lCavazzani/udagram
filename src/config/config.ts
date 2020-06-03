@@ -19,6 +19,9 @@ export const config = {
   //   "aws_profile": "default",
   //   "aws_media_bucket": "udagram-leoc-dev"
   // },
+  "jwt":{
+    "secret": "helloworld"
+  },
   "prod": {
     "username": "",
     "password": "",
