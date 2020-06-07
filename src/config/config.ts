@@ -19,6 +19,24 @@ export const config = {
   //   "aws_profile": "default",
   //   "aws_media_bucket": "udagram-leoc-dev"
   // },
+//   app.get("/filteredimage", async ( req, res) => {
+//     const { url } = req.query;
+
+//     if (!url) {
+//       res.status(400).send("Not a valid URL");
+//     }
+
+//     try {
+//       const post = await filterImageFromURL(url);
+
+//       await res.status(200).sendFile(post, (e) => {
+//         if (e) return res.status(422).send("Unable to filter image");
+//         deleteLocalFiles([post]);
+//       });
+//     } catch (e) {
+//       res.status(422).send("Unable to find / filter image");
+//     }
+// });
   "jwt":{
     "secret": "helloworld"
   },
